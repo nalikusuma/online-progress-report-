@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"/>
+<style>
+.lin{
+width:80px;
+    height: 40px;
+    background-color:white;
+    box-shadow:10px  white;
+    border-radius: 5px;
+   margin-left: 45%;
+    align-items:center;
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$(".mn").click(function(){
+$(".mn").css("border-color","black");
+$(".mn1").click(function(){
+$(".mn1").css("border-color","black");
+})
+$(".mn2").click(function(){
+$(".mn2").css("border-color","black");
+})
+$(".mn3").click(function(){
+$(".mn3").css("border-color","black");
+})
+$(".mn4").click(function(){
+$(".mn4").css("border-color","black");
+})
+$(".mn5").click(function(){
+$(".mn5").css("border-color","black");
+})
+$(".mn6").click(function(){
+$(".mn6").css("border-color","black");
+})
+});
+});
+</script>
+  </head>
+  <body>
+     <div class="signup-box">
+      <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+          <form  name="myform"  action="insert_student.php" method="POST">
+             <label>Name</label>
+             <input type="text"  class="mn"placeholder="Enter Student name"  name="name" required><br>
+             <label>student ID</label>
+             <input type="username" class="mn1" placeholder=" Enter your Diploma Hallicket Number"  name="student_id" required>
+             <label>College Name</label>
+             <input type="text"  class="mn2"placeholder="Enter your college name"  name="college_name" required>
+             <label>Course</label>
+             <input type="text" class="mn3" placeholder=" Enter your department name" name="course" required>
+             <label>Email</label>
+             <input type="e-mail" class="mn4"placeholder="Enter your e-mail ID" name="e-mail" required>
+             <label>Username</label>
+             <input type="text"  class="mn5"placeholder="Enter Username" name="username" required>
+             <label>Password</label>
+             <input type="password"  class="mn6" placeholder="Enter 8 digit password" name="password" required><br><br><br>
+             <input type="submit" value="SUBMIT" />
+          </form><br><br><br>
+      <p class="aa">
+        By clicking the submit button,you agree to our <br />
+      <a href="terms_conditions.html"  class="a">Terms and Condition</a>and<a href="terms_conditions.html" class="a">Privacy Policy</a>
+      </a></p>
+<table><tr>
+           <td> <button class="lin"><a href="HOMEPAGE.HTML">HOME</a></button></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><button class="lin"><a href="terms_conditions.html">NEXT</a></button></td></tr>
+</table>
+    
+    </div>
+<p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+</p>
+</body>
+</html>

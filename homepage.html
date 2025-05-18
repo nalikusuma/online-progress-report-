@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="progress report" content="progress report generator">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+                
+    <title>Online progress report generator</title>
+    <!-- <link rel="stylesheet"  href="style.css"> -->
+     <link rel="stylesheet" href="index.css">
+
+ <style>
+  header ul  button{
+    background-color:transparent;
+            border:none; text-shadow:1px 2px 4px whitesmoke;
+            font-size:large;
+  }
+  header ul button:hover{
+    color:white;
+  }
+  #log1{
+    background-color:transparent;
+            border:none;
+            font-size:large;
+            margin:0px 0px;
+            color:goldenrod;
+              
+  }
+  
+
+</style>
+
+</head>
+<body>
+  <div id="body">
+    <header>
+        <img src="enhanced_image (2).jpg" id="icon" >
+        <h1>Online progress report </h1>
+        <line></line>
+        <h4>college Report</h4>
+        <ul>  
+        <li class="nav"><a href="homepage.html">Home</a></li>   
+       <li> <button onclick="signuppop()" >SignIn</button></li>
+       <li> <button onclick="loginpop()">LogIn</button></li>
+        <li class="nav"><a href="About.html">About</a></li>
+        </ul>
+          <div>
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg" id="icon1" onclick="togglepopup()" >
+              <div class="toggle" id="submenu">
+                <div class="pop">
+                 <h5>My profile</h5>
+                 <h5>Sign In</h5>
+                 <h5>sign out-></h5>
+               </div>
+             </div>
+          </div>
+            
+    </header>
+    
+    <hr>
+      <section>    
+        <div class="main"> </div>
+       <div class="use1">
+            <p id="p">
+          unlock Your Academic Potential with the Online Progress Report!</p>
+          
+        <p id="desc" >Take charge of your learning and see your progress like never before.
+            Our Online Progress Report Generator 
+              empowers you to track your academic achievements, identify areas for improvement, and set goals to reach your  full potential.
+            </p>
+        </div>
+      
+   <div class="use2">
+             <form id="signin"  action="user.php" method="post" >
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg" class="icons">
+                <h2> Let's Join together</h2>
+
+               <input type="text" name="name" placeholder="Username" class="in2" required><br>
+                
+                <input type="email" name="email" placeholder="E-mail id"   class="in2" required><br>
+             
+                <input type="password" name="password" placeholder="password"
+                 class="in2"   required><br>
+
+                 <button type="submit" class="btn" onclick="verify()" >Signin</button>
+                 <p id="form" style="color:white;"> Already have an account? <button id="log1" onclick="loginpop()">Log in</button></p>
+
+             </form>
+             
+        </div> 
+        
+         </section>
+   
+    
+   
+     <section class="desc">
+        <p>A progress report is a document that provides updates on the status of a project, task, or
+             activity. It helps track progress, highlight achievements, identify challenges, and ensure 
+             that goals are being met within the expected timeline.An online progress report system is a digital platform designed to streamline the process of tracking, monitoring, and managing progress across various projects, tasks, and activities. It eliminates the inefficiencies of traditional reporting methods by providing real-time updates, automated data collection, and easy accessibility from any device. The system allows users to generate structured reports.</p>
+            <div id="conta">
+              <div class="cont">
+                  <img src="memo.jfif">
+                <div class="inner">
+                    <h4>College Marks Memo</h4>
+                    <p>Marks memo that is equal to the official marks memo given by the college</p>
+                    <button type="button" onclick="signuppop() "id="external">Click here  </button>
+                </div>
+                
+              </div>
+               <div class="cont">
+                <img src="data:image/jpeg;base64,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">
+                <div class="inner">
+                    <h4>Mid marks tracking</h4>
+                    <p>Marks memo that is equal to the official marks memo given by the college</p>
+                    <button type="button" onclick="signuppop()">Click here</button>
+                </div>
+               </div>
+           </div>
+             <p>An online progress report system provides students with a structured and efficient way to track their academic performance, assignments, and project milestones. By offering real-time updates and automated progress tracking, the system ensures that students stay informed about their coursework and deadlines. It allows easy access to reports from any device, helping students review feedback, monitor their improvements, and plan their studies effectively. The system also reduces the chances of miscommunication by providing a centralized platform where students can access their grades, teacher comments, and upcoming tasks.
+
+              Additionally, the integration of data analytics and graphical performance insights enables students to identify their strengths and areas that need improvement. By regularly reviewing their progress, students can set realistic academic goals and take proactive measures to enhance their learning. The system also promotes accountability and self-discipline, as students can track their own growth over time. With features like reminders, notifications, and collaborative tools, an online progress report system helps students stay organized, focused, and better prepared for their academic journey.
+              An online progress report system offers students a more personalized and interactive learning experience.It  empowers students to take charge of their education and make informed decisions for their future success.<br>
+              <br><br>
+              The online progress report system provides students with a seamless and efficient way to access and manage their academic records. The platform integrates three essential facilities to enhance convenience, accuracy, and accessibility:<br><br>
+
+<strong>College Official Marks Memo Template  –</strong> Students can securely view their official college marks memo in a standardized format. This ensures that they have instant access to their academic records without the need for physical copies, reducing paperwork and administrative delays. The system maintains the authenticity of the document, allowing students to use it for future references, applications, or verification purposes.<br><br>
+
+<strong>Digi Locker Integration – </strong>With Digi Locker support, students can store and retrieve their academic documents digitally. This feature eliminates the risk of losing physical copies and provides a secure, government-recognized platform for accessing verified documents anytime, anywhere. The integration ensures that students can easily share their academic records with universities, employers, and other institutions without manual paperwork.<br><br>
+
+<strong>Mid-Term Marks Tracking –</strong> The system enables students to monitor their mid-term progress, helping them stay informed about their academic standing before final exams. This feature allows students to analyze their performance, identify areas for improvement, and seek guidance from faculty when necessary. Real-time tracking ensures that students can take proactive steps to enhance their scores and academic growth.<br><br>
+By providing access to these essential academic services in one centralized platform, the online progress report system improves efficiency, transparency, and accessibility for students. It empowers them to take control of their academic journey with secure, real-time data at their fingertips.
+            </p>
+     </section>
+     <footer>
+      <div id="footer1">
+           <div id="foot">
+            <ul>
+              <li>Home</li>
+              <li>Sign In</li>
+              <li>Log In</li>
+              <li>Contact us</li>
+            </ul>
+           </div>
+           <div id="foot">
+            
+            <ul>
+              <li>Users</li>
+              <li>Student</li>
+              <li>Teacher</li>
+              <li>Administrator</li>
+            </ul>
+           </div>
+           <div id="foot">
+           
+            <ul>
+              <li>Marks Memo</li>
+              <li>Diploma</li>
+              <li>UG Degree</li>
+              <li>PG Degree</li>
+            </ul>
+           </div>
+           <div id="foot">
+            <ul>
+              <li>Contact Us</li>
+              <li>Whatsapp</li>
+              <li>Instagram</li>
+              <li>Google</li>
+            </ul>
+          </div>
+          
+      </div>
+      <div id="foot1"></div>
+      <h3>&copy; This is developed as a college project</h3>
+         
+     </footer>   
+</div>
+<div id="log">
+    <div class="login-box">
+
+      <h1>Login</h1>
+<form  action="user.php" method="POST">
+	<input type="text" placeholder="Enter username"  name="name" style="visibility:hidden" ><br>
+  <Label>Username</Label><br>
+	<input type="email" class="input" placeholder="Enter username"  name="email" required><br>
+         <label>Password</label> <br>
+        <input type="password" placeholder="Enter 8 digit password" class="input"   name="password" required><br><br>
+          <input type="submit"  class="input" value="LOGIN" style="font-weight:bold;font-size:15px;background-color:white;color:blue;" />
+      </form>
+    
+    <p class="para-2">
+      Not have an account? <button onclick="signuppop()" style="background-color:transparent; border:none;font-size:medium; color:red;">Sign Up Here</button>
+      <button id="close" onclick="closepop()"><img src="close.png" width="50px" height="50px"></button>
+    </p>
+  </div>
+
+</div>
+<!-- log in pop up-->
+
+<!--  pop up-->
+<div id="popup">
+  <div class="bor">
+     <div class="pop_sign" id="pop_sign">
+       <div class="pop_sign1">
+               <h4 style="margin-top:50px;"> Welcome , </h4>
+               <img src="wel.jfif" style="margin-left:125px;" width="300px" height="300px">
+            <button id="close" onclick="closepop()"><img src=" close.png" width="50px" height="50px"></button>
+       </div>
+       <div class="form">
+            <form id="pop_signin"  action="user.php" method="post" >
+               <img src="https://static.vecteezy.com/system/resources/thumbnails/007/407/996/small/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg" class="icons">
+                    <h2> Let's Join together</h2>
+
+             <input type="text" name="name" placeholder="Username"
+               class="in2" required><br>
+
+             <input type="email" name="email" placeholder="E-mail id"
+                 class="in2" required><br>
+
+             <input type="password" name="password" placeholder="password"
+                         class="in2"   required><br>
+    
+               <button type="submit" class="btn"  >Signin</button>
+             </form>
+<p class="form1" style="margin:-22px 144px; padding:10px 0px;z-index:3; position:relative;"> Already have an account?<button onclick="loginpop()"style="background-color:transparent; border:none;font-size:medium; color:goldenrod;">Log in</button></p>
+           
+         
+        </div>
+      </div> 
+    </div>
+  </div> 
+<!-- pop up-->
+
+   
+     <script src="home.js"></script>
+     <script>
+      window.onload=function(){
+        const urlparams=new URLSearchParams(window.location.search);
+        const errorMessage=urlparams.get('error');
+        if(errorMessage){
+          alert(errorMessage);
+            
+        }
+    };
+    </script>
+</body>
+</html>
+
+
+
+ 

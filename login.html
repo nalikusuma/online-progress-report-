@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#mn").click(function(){
+$("#mn").css("border-color","black");
+})
+$("#mn1").click(function(){
+$("#mn1").css("border-color","black");
+})
+$("#mn2").click(function(){
+$("#mn2").css("border-color","black");
+})
+});
+</script>
+
+  </head>
+  <body>
+<div class="login-box">
+
+      <h1>Login</h1>
+<form  action="login_action1.php" method="POST">
+          <label>STUDENT ID</label>
+	<input type="username" id="mn2" placeholder="Enter  Hall Ticket Number" name="id" required>
+         <label>Email</label>
+        <input type="email" id="mn" placeholder="Enter Mail Id Ex:abc12@gmail.com " name="username"  required>
+        <label>Password</label>
+        <input type="password" id="mn1" placeholder=" Enter 8 digit code "  name="password" required><br><br>
+          <input type="submit" value="LOGIN" style="background-color:green;color:white;" />
+      </form>
+      <p>
+        By clicking the submit button,you agree to our <br />
+        <a href="terms_conditions.html">Terms and Condition</a> and <a href="terms_conditions.html">Privacy Policy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="sign_in_student.html">Sign Up Here</a>
+    </p>
+
+</body>
+</html>
